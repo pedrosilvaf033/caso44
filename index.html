@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro e Kaue - Terminal de Acesso Sigiloso (2010)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pedro_escuro"> 
+
+  <div id="container" class="pedro_tela_login_box"> <!-- Cria o background da tela de login e o conatiner das indormações-->
+
+    <header id="pedro_topo"> <!-- Cria o topo da tela de login, a parte do cabeçalho -->
+      <div class="pedro_topo_conteudo"> <!-- Cria o conteúdo do topo da tela de login, a parte do cabeçalho -->
+        <img src="img/logo_departamento.png" alt="Selo do Departamento" class="pedro_logo"> <!-- Adiciona a imagem do selo do departamento -->
+        <div>
+          <h1>DEPARTAMENTO DE ARQUIVOS OCULTOS [REDE INTERNA v2.04 - ANO 2010]</h1> <!-- Título do departamento -->
+          <p class="pedro_lema_clube">ACESSO RESTRITO A INVESTIGADORES CREDENCIADOS</p> <!-- Paragrafo do departamento -->
+        </div>
+      </div>
+    </header>
+
+    <main id="pedro_conteudo_geral"> <!-- Cria o conteúdo geral da tela de login, a parte do corpo -->
+      <section class="pedro_caixa_login"> <!-- Cria a section de login, a parte do corpo -->
+        <h2>Autenticação de Terminal</h2> <!-- Cria o título da section de login --> 
+        <p>Insira sua identificação de agente e a chave de segurança para acessar o banco de casos.</p>
+
+        <form id="pedro_formLogin"> <!-- Cria o formulário(Semântico) de login -->
+          <div class="pedro_form_grupo"> <!-- Cria o grupo de formulário(label + input) -->
+            <label for="pedro_usuarioLogin">Nome do Investigador:</label> <!-- Cria o label para o campo de usuário (Texto acima da caixa de texto, o uso do for serve para que quando ele clique em cima do label, o cursor vá para a caixa de texto)-->
+            <input type="text" id="pedro_usuarioLogin" placeholder="Digite seu nome ou codinome..."> <!-- Cria o campo de usuário (Caixa de texto, o uso do placeholder serve para que apareça um texto dentro da caixa de texto, e quando o usuário digitar, o texto desaparece) -->
+          </div>
+
+          <div class="pedro_form_grupo"> <!-- Cria o grupo de formulário(label + input) -->
+            <label for="pedro_senhaLogin">Senha de Acesso (Dica de teste: caso44):</label> <!-- Cria o label para o campo de senha (Texto acima da caixa de texto, o uso do for serve para que quando ele clique em cima do label, o cursor vá para a caixa de texto)-->
+            <input type="password" id="pedro_senhaLogin" placeholder="Digite a senha..."> <!-- Cria o campo de senha (Caixa de texto, o uso do placeholder serve para que apareça um texto dentro da caixa de texto, e quando o usuário digitar, o texto desaparece) -->
+          </div>
+
+          <div class="pedro_botoes_form"> <!-- Cria o grupo de botões do formulário -->
+            <button type="button" onclick="realizarLogin()">Acessar Diretório [ENTER]</button> <!-- Cria o botão de login (Botão, o uso do type="button" serve para que o botão não envie o formulário, e o uso do onclick serve para que quando o usuário clique no botão, a função realizarLogin() seja executada) -->
+            <button type="reset">Limpar</button> <!-- Cria o botão de limpar (Botão, o uso do type="reset" serve para que o botão limpe os campos do formulário) -->
+          </div>
+
+          <p id="pedro_msgLogin"></p> <!-- Cria o parágrafo de mensagem de login (Parágrafo, o uso do id serve para que o parágrafo seja identificado e possa ser manipulado pelo JavaScript) -->
+        </form>
+      </section>
+    </main>
+
+    <footer id="kaue_rodape"> 
+      <p>Sistema de Arquivos Policiais — Servidor Antigo 2010 | Projeto de: <strong>Pedro e Kaue</strong></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script> <!-- Adiciona o script.js (JavaScript, o uso do src serve para que o arquivo seja carregado e executado) -->
+</body>
+</html>
